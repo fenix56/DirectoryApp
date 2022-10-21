@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MOw-0O-Mi9">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--People-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PeopleViewController" customModule="DirectoryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4ii-wR-l8L">
+                                <rect key="frame" x="0.0" y="91" width="375" height="638"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="personCell" id="eoA-WH-NBw" customClass="PeopleTableViewCell" customModule="DirectoryApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eoA-WH-NBw" id="jLX-4a-fmT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="rG1-sk-WAS">
+                                <rect key="frame" x="167.66666666666666" y="386" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="GfF-Mq-3wB"/>
+                                    <constraint firstAttribute="height" constant="40" id="wRa-zw-lxA"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="rG1-sk-WAS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4yF-Jz-wwc"/>
+                            <constraint firstItem="rG1-sk-WAS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5d4-MH-736"/>
+                            <constraint firstItem="4ii-wR-l8L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9Fc-3e-Tek"/>
+                            <constraint firstItem="4ii-wR-l8L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Lxy-1d-9a3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4ii-wR-l8L" secondAttribute="bottom" id="hHZ-jD-BEk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4ii-wR-l8L" secondAttribute="trailing" id="uZ5-Y4-cwT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="People" id="DGr-DZ-TM9"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="rG1-sk-WAS" id="ly8-aA-i6N"/>
+                        <outlet property="tableView" destination="4ii-wR-l8L" id="Edn-J4-vpF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1826.1538461538462" y="3.5545023696682461"/>
+        </scene>
+        <!--Rooms-->
+        <scene sceneID="PDx-tv-Sbe">
+            <objects>
+                <viewController id="prT-Y6-mjg" customClass="RoomsViewController" customModule="DirectoryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="suF-3q-FTR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7ul-Cb-eUJ"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rooms" id="w0T-EN-MoD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cte-Og-CEM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1826.1538461538462" y="691.70616113744074"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yjG-6C-fLJ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="MOw-0O-Mi9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8sA-R5-wnp">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="23D-Gp-CWA" kind="relationship" relationship="viewControllers" id="Jne-AQ-g1f"/>
+                        <segue destination="K9t-xq-i9v" kind="relationship" relationship="viewControllers" id="nHb-dU-u7N"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H5d-Ig-Oyx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-32.307692307692307" y="347.63033175355446"/>
+        </scene>
+        <!--People-->
+        <scene sceneID="G7D-tP-x5d">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="23D-Gp-CWA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="People" image="person.3" catalog="system" id="r6L-6S-99b"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oOc-8y-lSG">
+                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JJ6-Q4-VI9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJa-P5-qWY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="896.92307692307691" y="3.5545023696682461"/>
+        </scene>
+        <!--Rooms-->
+        <scene sceneID="WuF-4G-QKC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K9t-xq-i9v" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Rooms" image="house" catalog="system" id="K31-iy-VmY"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="01b-SZ-Q5S">
+                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="prT-Y6-mjg" kind="relationship" relationship="rootViewController" id="JGG-lA-sev"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d94-Ac-aYT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="896.92307692307691" y="691.70616113744074"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="person.3" catalog="system" width="128" height="62"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
