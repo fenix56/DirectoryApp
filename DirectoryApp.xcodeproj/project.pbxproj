@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		015323CE290687B40091D63B /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015323CD290687B40091D63B /* PersonDetailsViewController.swift */; };
+		015323D02906B6AE0091D63B /* RoomsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015323CF2906B6AE0091D63B /* RoomsViewModel.swift */; };
+		015323D22906B7160091D63B /* RoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015323D12906B7160091D63B /* RoomTableViewCell.swift */; };
+		015323D42906C1750091D63B /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015323D32906C1750091D63B /* Room.swift */; };
+		015323D62906CE5D0091D63B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015323D52906CE5D0091D63B /* String+Extension.swift */; };
 		01B6325B2902A9DE0082B59F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B6325A2902A9DE0082B59F /* AppDelegate.swift */; };
 		01B6325D2902A9DE0082B59F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B6325C2902A9DE0082B59F /* SceneDelegate.swift */; };
 		01B6325F2902A9DE0082B59F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B6325E2902A9DE0082B59F /* ViewController.swift */; };
@@ -49,6 +54,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		015323CD290687B40091D63B /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
+		015323CF2906B6AE0091D63B /* RoomsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewModel.swift; sourceTree = "<group>"; };
+		015323D12906B7160091D63B /* RoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTableViewCell.swift; sourceTree = "<group>"; };
+		015323D32906C1750091D63B /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		015323D52906CE5D0091D63B /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		01B632572902A9DE0082B59F /* DirectoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DirectoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01B6325A2902A9DE0082B59F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01B6325C2902A9DE0082B59F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +204,7 @@
 				01B632AA2902FB710082B59F /* PeopleTableViewCell.swift */,
 				01B632A12902CF3B0082B59F /* Person.swift */,
 				01B632A52902E61E0082B59F /* PeopleViewController.swift */,
+				015323CD290687B40091D63B /* PersonDetailsViewController.swift */,
 			);
 			path = People;
 			sourceTree = "<group>";
@@ -201,6 +212,9 @@
 		01B632A72902E6570082B59F /* Rooms */ = {
 			isa = PBXGroup;
 			children = (
+				015323CF2906B6AE0091D63B /* RoomsViewModel.swift */,
+				015323D12906B7160091D63B /* RoomTableViewCell.swift */,
+				015323D32906C1750091D63B /* Room.swift */,
 				01B632A82902E6660082B59F /* RoomsViewController.swift */,
 			);
 			path = Rooms;
@@ -218,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				01B632AE2903049A0082B59F /* Controller+Extension.swift */,
+				015323D52906CE5D0091D63B /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -376,6 +391,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				01B6325F2902A9DE0082B59F /* ViewController.swift in Sources */,
+				015323D62906CE5D0091D63B /* String+Extension.swift in Sources */,
+				015323CE290687B40091D63B /* PersonDetailsViewController.swift in Sources */,
 				01B632AF2903049A0082B59F /* Controller+Extension.swift in Sources */,
 				01B632A42902D9550082B59F /* PeopleViewModel.swift in Sources */,
 				01B632962902C2840082B59F /* URLRequest+Extension.swift in Sources */,
@@ -388,9 +405,12 @@
 				01B6328F2902B02E0082B59F /* NetworkManager.swift in Sources */,
 				01B632A22902CF3B0082B59F /* Person.swift in Sources */,
 				01B6328D2902AF5A0082B59F /* EndPoints.swift in Sources */,
+				015323D42906C1750091D63B /* Room.swift in Sources */,
 				01B6329C2902C67D0082B59F /* RoomsResponse.swift in Sources */,
+				015323D22906B7160091D63B /* RoomTableViewCell.swift in Sources */,
 				01B632942902B9120082B59F /* ServiceError.swift in Sources */,
 				01B6325D2902A9DE0082B59F /* SceneDelegate.swift in Sources */,
+				015323D02906B6AE0091D63B /* RoomsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
