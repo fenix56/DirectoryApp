@@ -34,4 +34,13 @@ final class PeopleTests: XCTestCase {
         XCTAssertEqual(viewModel.getPerson(for: 70).personId, 70)
     }
 
+    func testGetPeople_failure() {
+        let peopleApiRequest = ApiRequest(baseUrl: EndPoint.baseURL, path: "people_failure", params: [:])
+        
+        XCTAssertEqual(viewModel.state, .none)
+        viewModel.getPeople(apiRequest: peopleApiRequest)
+        
+        XCTAssertEqual(viewModel.state, .error(ServiceError.dataNotFound.localizedDescription))
+        XCTAssertEqual(viewModel.getPeopleCount, 0)
+    }
 }

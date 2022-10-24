@@ -22,7 +22,7 @@ final class RoomsTests: XCTestCase {
         viewModel = nil
     }
     
-    func testGetPeople_success() {
+    func testGetRooms_success() {
         let roomsApiRequest = ApiRequest(baseUrl: EndPoint.baseURL, path: "rooms_success", params: [:])
         
         XCTAssertEqual(viewModel.state, .none)
@@ -32,6 +32,16 @@ final class RoomsTests: XCTestCase {
         XCTAssertEqual(viewModel.getRoomsCount, 65)
         XCTAssertEqual(viewModel.getRoom(for: 0).isOccupied, false)
         XCTAssertEqual(viewModel.getRoom(for: viewModel.getRoomsCount - 1).isOccupied, true)
+    }
+    
+    func testGetRooms_failure() {
+        let roomsApiRequest = ApiRequest(baseUrl: EndPoint.baseURL, path: "rooms_failure", params: [:])
+        
+        XCTAssertEqual(viewModel.state, .none)
+        viewModel.getRooms(apiRequest: roomsApiRequest)
+        
+        XCTAssertEqual(viewModel.state, .error(ServiceError.dataNotFound.localizedDescription))
+        XCTAssertEqual(viewModel.getRoomsCount, 0)
     }
 
 }
