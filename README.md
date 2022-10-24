@@ -4,7 +4,7 @@ Simple iOS app using UIKit created by [me](https://github.com/fenix56) to demons
 ## Description
 **Directory App** calls <https://61e947967bc0550017bc61bf.mockapi.io/api/v1/> API to show list/detail pages for the people and a list page for the rooms. Architecture used to develop this app is MVVM with dedicated network module. All ViewModels are covered by unit testing and a mock network manager is implemented for testing purposes.
 
-##Navigation
+## Navigation
 
 On the start of app you shoud see this screen:
 
