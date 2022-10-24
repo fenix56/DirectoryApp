@@ -307,7 +307,7 @@
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="100" id="2ho-Fu-P6l"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="2ho-Fu-P6l"/>
                                                         <constraint firstItem="w1u-ZX-Buc" firstAttribute="leading" secondItem="qQu-Zq-MUz" secondAttribute="leading" id="4fh-a5-iVO"/>
                                                         <constraint firstAttribute="trailing" secondItem="w1u-ZX-Buc" secondAttribute="trailing" id="RNF-tN-pyb"/>
                                                         <constraint firstItem="5S8-dZ-4cE" firstAttribute="centerX" secondItem="qQu-Zq-MUz" secondAttribute="centerX" id="T8Q-Zg-G7M"/>
